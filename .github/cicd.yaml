@@ -1,0 +1,29 @@
+name: Release Skills
+
+on:
+  push:
+    tags: ['v[0-9]+.[0-9]+.*']
+
+jobs:
+  release:
+    name: 📦 Create GitHub Release
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # Required for creating GitHub Releases
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Zip skills folder
+        run: zip -r "Bigdata_Financial_Skills_${{ github.ref_name }}.zip" skills/
+
+      - name: Create GitHub Release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          gh release create '${{ github.ref_name }}' \
+            --repo '${{ github.repository }}' \
+            --title 'Release ${{ github.ref_name }}' \
+            --generate-notes \
+            "Bigdata_Financial_Skills_${{ github.ref_name }}.zip"
