@@ -1,2 +1,2 @@
-# biodata-skills
+# bigdata-skills
 Skills
