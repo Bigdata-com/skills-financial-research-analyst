@@ -55,8 +55,9 @@ All workflows use the Bigdata.com MCP tools:
 
 ## Universal Best Practices
 
-- Always call `find_companies` first to get the entity_id
-- Use `bigdata_tearsheet` to establish financial baseline
+- Call `find_companies` first when using `bigdata_tearsheet` or `bigdata_events_calendar` (these require entity_id)
+- `bigdata_search` can be used directly without calling `find_companies` - just include company name in search query
+- Use `bigdata_tearsheet` to establish financial baseline when detailed company data is needed
 - Call `bigdata_search` multiple times with targeted queries for comprehensive coverage
 - Cite all sources with dates
 - Separate objective facts from analysis/implications
@@ -66,9 +67,47 @@ All workflows use the Bigdata.com MCP tools:
 
 ## Workflow Selection Guide
 
-| User Need | Workflow |
-|-----------|----------|
-| Recent developments and news summary | Company Brief |
-| Pre-earnings analysis and expectations | Earnings Preview |
-| Post-earnings results analysis | Earnings Digest |
-| Comprehensive risk evaluation | Risk Assessment |
+| User Need | Workflow | Example Queries |
+|-----------|----------|-----------------|
+| Recent developments and news summary | Company Brief | "What's happening with [company]?", "Recent news about [company]", "Update me on [company]", "Summarize [company] developments", "What has [company] been doing lately?" |
+| Pre-earnings analysis and expectations | Earnings Preview | "Preview [company] earnings", "What to expect from [company] earnings?", "Setup for [company] earnings", "Earnings expectations for [company]", "Bull and bear case for [company] earnings" |
+| Post-earnings results analysis | Earnings Digest | "Analyze [company] earnings", "Break down [company] results", "How did [company] perform?", "Summarize [company] quarterly results", "What were the earnings surprises for [company]?", "[Company] earnings reaction" |
+| Comprehensive risk evaluation | Risk Assessment | "What are the risks for [company]?", "Risk factors for [company]", "Assess [company] vulnerabilities", "What could go wrong with [company]?", "Analyze [company] downside risks", "Financial health of [company]" |
+| Investment research (general) | Company Brief → then follow up with specific workflows | "Research [company]", "Tell me about [company]", "Should I invest in [company]?" |
+| Due diligence | All workflows in sequence | Start with Company Brief, then Risk Assessment, then Earnings Digest/Preview as appropriate |
+| Quarterly monitoring | Earnings Digest + Company Brief | "Quarterly update on [company]" |
+| Pre-investment screening | Risk Assessment + Company Brief | "Is [company] a good investment?", "Evaluate [company]" |
+
+## Use Case Scenarios
+
+### Scenario 1: New Investment Idea
+**Situation:** User heard about a company and wants to learn more
+**Recommended Flow:** 
+1. Start with **Company Brief** (30-day overview)
+2. Follow with **Risk Assessment** (understand vulnerabilities)
+3. Check **Earnings Digest** (latest quarterly performance)
+
+### Scenario 2: Earnings Season
+**Situation:** Earnings are coming up or just released
+**Before Earnings:** Use **Earnings Preview**
+**After Earnings:** Use **Earnings Digest**
+
+### Scenario 3: Portfolio Monitoring
+**Situation:** User wants updates on existing holdings
+**Recommended:** **Company Brief** for quick 30-day catch-up on each holding
+
+### Scenario 4: Risk Review
+**Situation:** Market volatility or company-specific concerns
+**Recommended:** **Risk Assessment** to evaluate vulnerabilities and exposure
+
+### Scenario 5: Sector Research
+**Situation:** User is researching multiple companies in same sector
+**Recommended:** Run **Company Brief** for each, compare findings
+
+### Scenario 6: Comprehensive Due Diligence
+**Situation:** Deep research before major investment decision
+**Recommended Flow:**
+1. **Company Brief** (current state)
+2. **Risk Assessment** (downside analysis)
+3. **Earnings Digest** (recent performance)
+4. **Earnings Preview** (forward outlook if earnings upcoming)
