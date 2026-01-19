@@ -1,5 +1,5 @@
 ---
-name: Bigdata_Financial_Skills
+name: bigdata-financial-skills
 description: Comprehensive financial analysis workflows powered by Bigdata.com. Use for company briefs (30-day summaries), earnings previews, earnings digests, and risk assessments. Provides deep analysis of financial data, recent developments, and investment implications.
 ---
 

@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Zip Bigdata_Financial_Skills folder
-        run: zip -r "Bigdata_Financial_Skills_${{ github.ref_name }}.zip" skills/Bigdata_Financial_Skills/
+        run: cd skills && zip -r "../Bigdata_Financial_Skills_${{ github.ref_name }}.zip" Bigdata_Financial_Skills/
 
       - name: Create GitHub Release
         env:
