@@ -15,8 +15,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Zip Bigdata_Financial_Skills folder
-        run: cd skills && zip -r "../Bigdata_Financial_Skills_${{ github.ref_name }}.zip" Bigdata_Financial_Skills/
+      - name: Build skill package
+        run: ./scripts/build-skill.sh '${{ github.ref_name }}'
 
       - name: Create GitHub Release
         env:
@@ -26,4 +26,4 @@ jobs:
             --repo '${{ github.repository }}' \
             --title 'Release ${{ github.ref_name }}' \
             --generate-notes \
-            "Bigdata_Financial_Skills_${{ github.ref_name }}.zip"
+            "bigdata-financial-research-analyst_${{ github.ref_name }}.skill"
