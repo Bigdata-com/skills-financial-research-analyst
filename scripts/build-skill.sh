@@ -6,10 +6,14 @@ cd "$(dirname "$0")/.."
 
 VERSION="${1:?Version is required as first argument}"
 SKILL_NAME="bigdata-financial-research-analyst"
-OUTPUT_FILE="${SKILL_NAME}_${VERSION}.skill"
+OUTPUT_DIR="scripts/output"
+OUTPUT_FILE="${OUTPUT_DIR}/${SKILL_NAME}_${VERSION}.skill"
+
+# Ensure output directory exists
+mkdir -p "${OUTPUT_DIR}"
 
 echo "Building skill package: ${OUTPUT_FILE}"
 
-zip -r "${OUTPUT_FILE}" bigdata-financial-skills/
+zip -r "${OUTPUT_FILE}" bigdata-financial-research-analyst/
 
 echo "Created: ${OUTPUT_FILE}"
