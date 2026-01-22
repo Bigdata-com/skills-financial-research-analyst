@@ -26,4 +26,4 @@ jobs:
             --repo '${{ github.repository }}' \
             --title 'Release ${{ github.ref_name }}' \
             --generate-notes \
-            "bigdata-financial-research-analyst_${{ github.ref_name }}.skill"
+            "scripts/output/bigdata-financial-research-analyst_${{ github.ref_name }}.skill"
