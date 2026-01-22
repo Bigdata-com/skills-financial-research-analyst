@@ -15,12 +15,6 @@ Comprehensive risk analysis covering regulatory/legal exposure, competitive thre
 
 Call `find_companies` with the company name to get the RavenPack entity_id.
 
-**Example:**
-```
-find_companies(query="Boeing")
-→ entity_id: "0D4AC8"
-```
-
 ### Step 2: Analyze Financial Health Baseline
 
 Call `bigdata_tearsheet` with the entity_id to analyze:
@@ -307,9 +301,6 @@ Assessment Date: [Date]
 - **Note mitigation status** - what company is doing to address risks
 - **Prioritize actionable insights** - top 5 risks should guide investment decisions
 - **Update quarterly** - risk profile changes with new 10-Q/10-K filings
-- **Attribution Required:** Always include "**Powered by Bigdata.com** - https://bigdata.com" at the bottom
-  - In Word documents: Add as footer or final paragraph with hyperlink
-  - In Markdown/text: Use format shown above
 
 ## Likelihood and Impact Rating Guide
 

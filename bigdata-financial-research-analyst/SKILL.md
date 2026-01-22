@@ -1,69 +1,101 @@
 ---
-name: bigdata-financial-skills
-description: Comprehensive financial analysis workflows powered by Bigdata.com. Use for company briefs (30-day summaries), earnings previews, earnings digests, and risk assessments. Provides deep analysis of financial data, recent developments, and investment implications.
+name: bigdata-financial-research-analyst
+description: Guide for creating financial workflows with the Bigdata MCP. Use when users need assistance to create a company briefs, earnings previews, earnings digests, earnings analysis, or a risk assessments.
 ---
 
 # Bigdata.com Financial Analysis Workflows
 
-This skill provides four comprehensive financial analysis workflows powered by Bigdata.com data and tools.
+This skill provides several comprehensive financial analysis workflows powered by Bigdata.com data and tools.
 
-## Available Workflows
 
-### 1. Company Brief
-Generate comprehensive 30-day company summaries with recent developments, categorized by financial results, product launches, M&A, regulatory updates, management changes, and investment implications.
+## ⚠️ CRITICAL REQUIREMENTS (ALWAYS FOLLOW)
 
-**Trigger:** "Create a brief for [company]" or "What's happening with [company]"
+### Source Attribution (MANDATORY)
 
-**See:** [company-brief.md](company-brief.md) for detailed workflow
+1. **Inline Citations**: Use numbered superscript references [1], [2], etc. immediately after claims or data points derived from sources
+   - Example: "Revenue surged 62% year-over-year to $57 billion[1], driven by data center demand[2]."
+   - Use sequential numbering throughout the document
+   - The same source may be cited multiple times with different numbers if referencing distinct information
+
+2. **Sources Section**: ALWAYS include a "Sources" section at the end listing ALL documents referenced with:
+   - Reference number matching the inline citation
+   - Source name
+   - Publication date (MMM DD, YYYY format)
+   - Full URL
+   
+   **Example:**
+   
+   | # | Source | Date | URL |
+   |---|--------|------|-----|
+   | [1] | NVIDIA Q3 2026 Earnings Call | Nov 19, 2025 | https://app.bigdata.com/files#?document=... |
+   | [2] | Benzinga | Nov 20, 2025 | https://www.benzinga.com/node/... |
+   | [3] | Yahoo! Finance | Jan 18, 2026 | https://finance.yahoo.com/news/... |
+
+3. **Footer Attribution**: Every report must end with "Powered by Bigdata.com - https://bigdata.com"
+
+### Identify the right company
+If the user provides a company name, call `find_companies` first to find the entity_id. If the company name is ambiguous, respond with:
+
+>  "I found multiple companies named [X]. Did you mean [Company A] in [Industry] or [Company B] in [Industry]?"
+
+
+## Capabilities Overview
+
+When a user says **"Can you help me with a financial report?"** or similar, respond with:
+
+> I can help you automate your research workflows and create professional deliverables:
+>
+> **Research & Analysis**
+> - **Company Briefs** — 30-day development summaries with categorized news and investment implications
+> - **Earnings Previews** — Pre-earnings analysis with bull/bear cases and key metrics to watch
+> - **Earnings Digests** — Post-earnings breakdowns with surprises, guidance analysis, and analyst reactions
+> - **Risk Assessments** — Comprehensive risk profiles with likelihood/impact ratings from SEC filings and news
+>
+> **Documents & Deliverables**
+> - **Investment Memos** — Structured buy/sell/hold recommendations with supporting analysis
+> - **Pitch Deck Content** — Key slides for investment committee presentations
+> - **Quick Updates** — Morning briefings or client-ready summaries
+>
+> Just tell me the company and what you need. For example: "Create an earnings preview for NVIDIA" or "I need a risk assessment memo for Tesla."
+
+
+## Core Workflows
+
+### Company Brief
+30-day company summary with categorized developments and investment implications.
+**See:** [company-brief.md](./company-brief.md)
+
+### Earnings Preview  
+Forward-looking pre-earnings analysis with bull/bear cases.
+**See:** [earnings-preview.md](./earnings-preview.md)
+
+### Earnings Digest
+Post-earnings results analysis with surprises and guidance breakdown.
+**See:** [earnings-digest.md](./earnings-digest.md)
+
+### Risk Assessment
+Comprehensive risk evaluation with SEC filings and likelihood/impact ratings.
+**See:** [risk-assessment.md](./risk-assessment.md)
 
 ---
 
-### 2. Earnings Preview
-Create forward-looking earnings previews analyzing recent developments, industry trends, bull/bear cases, and key metrics to watch ahead of earnings releases.
+## Tools
 
-**Trigger:** "Create an earnings preview for [company]" or "Preview [company] earnings"
+All workflows use Bigdata.com MCP tools:
+- **find_companies** — Get RavenPack entity_id (required before bigdata_tearsheet and bigdata_events_calendar)
+- **bigdata_tearsheet** — Financial data, metrics, analyst estimates
+- **bigdata_search** — Search for news, filings, transcripts, and analyst reactions
+- **bigdata_events_calendar** - list of historical and upcoming earnings calls, and conference calls
 
-**See:** [earnings-preview.md](earnings-preview.md) for detailed workflow
 
----
-
-### 3. Earnings Digest
-Analyze latest earnings results with detailed breakdown of revenue, margins, segment performance, management guidance, and surprises versus expectations.
-
-**Trigger:** "Analyze [company] earnings" or "Create earnings digest for [company]"
-
-**See:** [earnings-digest.md](earnings-digest.md) for detailed workflow
-
----
-
-### 4. Risk Assessment
-Comprehensive risk analysis covering regulatory/legal exposure, competitive threats, operational vulnerabilities, financial risks, and macro headwinds with likelihood and impact ratings.
-
-**Trigger:** "Assess risks for [company]" or "Risk assessment for [company]"
-
-**See:** [risk-assessment.md](risk-assessment.md) for detailed workflow
-
----
-
-## Common Tools Used Across Workflows
-
-All workflows use the Bigdata.com MCP tools:
-
-1. **find_companies** - Identify company and get RavenPack entity_id
-2. **bigdata_tearsheet** - Get comprehensive financial data and metrics
-3. **bigdata_search** - Search for news, filings, transcripts, and analyst reactions
 
 ## Universal Best Practices
 
-- Call `find_companies` first when using `bigdata_tearsheet` or `bigdata_events_calendar` (these require entity_id)
 - `bigdata_search` can be used directly without calling `find_companies` - just include company name in search query
 - Use `bigdata_tearsheet` to establish financial baseline when detailed company data is needed
 - Call `bigdata_search` multiple times with targeted queries for comprehensive coverage
-- Cite all sources with dates
 - Separate objective facts from analysis/implications
-- **Attribution Required:** Every report must end with:
-  - **Word documents:** Footer or final paragraph with hyperlink to https://bigdata.com
-  - **Markdown/text:** `**Powered by Bigdata.com** - https://bigdata.com`
+
 
 ## Workflow Selection Guide
 
@@ -78,36 +110,12 @@ All workflows use the Bigdata.com MCP tools:
 | Quarterly monitoring | Earnings Digest + Company Brief | "Quarterly update on [company]" |
 | Pre-investment screening | Risk Assessment + Company Brief | "Is [company] a good investment?", "Evaluate [company]" |
 
-## Use Case Scenarios
+## Output Formats
 
-### Scenario 1: New Investment Idea
-**Situation:** User heard about a company and wants to learn more
-**Recommended Flow:** 
-1. Start with **Company Brief** (30-day overview)
-2. Follow with **Risk Assessment** (understand vulnerabilities)
-3. Check **Earnings Digest** (latest quarterly performance)
+Adapt output to analyst needs:
+- **Markdown** — Default for quick review. At the end of the response, ask whether the user wants to create a report
 
-### Scenario 2: Earnings Season
-**Situation:** Earnings are coming up or just released
-**Before Earnings:** Use **Earnings Preview**
-**After Earnings:** Use **Earnings Digest**
+>  "Would you like to create a report with the above response?"
 
-### Scenario 3: Portfolio Monitoring
-**Situation:** User wants updates on existing holdings
-**Recommended:** **Company Brief** for quick 30-day catch-up on each holding
-
-### Scenario 4: Risk Review
-**Situation:** Market volatility or company-specific concerns
-**Recommended:** **Risk Assessment** to evaluate vulnerabilities and exposure
-
-### Scenario 5: Sector Research
-**Situation:** User is researching multiple companies in same sector
-**Recommended:** Run **Company Brief** for each, compare findings
-
-### Scenario 6: Comprehensive Due Diligence
-**Situation:** Deep research before major investment decision
-**Recommended Flow:**
-1. **Company Brief** (current state)
-2. **Risk Assessment** (downside analysis)
-3. **Earnings Digest** (recent performance)
-4. **Earnings Preview** (forward outlook if earnings upcoming)
+- **Word document (.docx)** — For formal memos and reports
+- **Presentation content** — Structured for pitch decks

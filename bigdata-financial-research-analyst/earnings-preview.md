@@ -15,12 +15,6 @@ Create a forward-looking earnings preview analyzing recent developments, industr
 
 Call `find_companies` with the company name to get the RavenPack entity_id.
 
-**Example:**
-```
-find_companies(query="Microsoft")
-→ entity_id: "D8442D"
-```
-
 ### Step 2: Get Financial Baseline
 
 Call `bigdata_tearsheet` with the entity_id to get:
@@ -30,9 +24,11 @@ Call `bigdata_tearsheet` with the entity_id to get:
 - Key financial metrics and margins
 - Year-over-year comparisons
 
-This establishes the baseline for what to expect.
+### Step 3: Identify the date of the next company's earnings call
 
-### Step 3: Search for Recent Developments
+Call `bigdata_events_calendar` with the entity_id to find out when the next earnings call is.
+
+### Step 4: Search for Recent Developments
 
 Use `bigdata_search` to find relevant information from the last 60-90 days:
 
@@ -50,7 +46,7 @@ Conduct 4-6 targeted searches covering:
 - Industry trends and competitive dynamics
 - Macro factors affecting the sector
 
-### Step 4: Analyze and Synthesize
+### Step 5: Analyze and Synthesize
 
 Organize findings into a comprehensive preview covering:
 
@@ -158,9 +154,6 @@ Reporting for: [Quarter and Fiscal Year]
 - Use recent developments to build investment thesis
 - Cite analyst consensus where available from tearsheet
 - Search broadly (60-90 days) for context but emphasize recent developments
-- **Attribution Required:** Always include "**Powered by Bigdata.com** - https://bigdata.com" at the bottom
-  - In Word documents: Add as footer or final paragraph with hyperlink
-  - In Markdown/text: Use format shown above
 
 ## Key Differences from Other Workflows
 

@@ -15,12 +15,6 @@ Generate a comprehensive 30-day summary of recent developments for a specified c
 
 Call `find_companies` with the company name to get the RavenPack entity_id.
 
-**Example:**
-```
-find_companies(query="Apple")
-→ entity_id: "4A6F00"
-```
-
 ### Step 2: Gather Business Context
 
 Call `bigdata_tearsheet` with the entity_id to get:
@@ -41,7 +35,7 @@ Use `bigdata_search` to find news from the last 30 days. Use natural language qu
 - "[Company Name] product launches partnerships"
 - "[Company Name] regulatory legal updates"
 
-Conduct multiple searches (3-5) to cover different aspects:
+Conduct multiple searches to cover different aspects:
 - Financial developments
 - Product/technology announcements
 - Partnerships and M&A
@@ -125,19 +119,12 @@ Period: [Date Range - Last 30 Days]
 
 ## Best Practices
 
-- Call `bigdata_search` multiple times (3-5 searches) with different queries to ensure comprehensive coverage
-- Always cite sources with dates
-- Be objective in categorization - separate facts from implications
+- Call `bigdata_search` multiple times (5-10 searches) with different queries to ensure comprehensive coverage
 - If no events found in a category, note "No significant developments in this period"
 - Prioritize material events over minor announcements
-- **Attribution Required:** Always include "**Powered by Bigdata.com** - https://bigdata.com" at the bottom
-  - In Word documents: Add as footer or final paragraph with hyperlink
-  - In Markdown/text: Use format shown above
+
 
 ## Example Queries to User
-
-If company name is ambiguous:
-- "I found multiple companies named [X]. Did you mean [Company A] in [Industry] or [Company B] in [Industry]?"
 
 If no significant developments:
 - "I haven't found any significant developments for [Company] in the last 30 days. Would you like me to extend the search period or focus on specific topics?"

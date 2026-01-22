@@ -15,12 +15,6 @@ Analyze the latest earnings results with detailed breakdown of revenue, margins,
 
 Call `find_companies` with the company name to get the RavenPack entity_id.
 
-**Example:**
-```
-find_companies(query="Tesla")
-→ entity_id: "4A5600"
-```
-
 ### Step 2: Get Financial Data
 
 Call `bigdata_tearsheet` with the entity_id to get:
@@ -32,12 +26,16 @@ Call `bigdata_tearsheet` with the entity_id to get:
 
 This provides the quantitative foundation for analysis.
 
-### Step 3: Search for Earnings Materials
+### Step 3: Identify the date of the last company's earnings call
+
+Call `bigdata_events_calendar` with the entity_id to find out when the most recent earnings call was.
+
+### Step 4: Search for Earnings Materials
 
 Use `bigdata_search` to find earnings-related content:
 
 **Recommended searches:**
-- "[Company Name] earnings results Q[X] [Year]"
+- "[Company Name] earnings results Q[X] [Fiscal Year]"
 - "[Company Name] earnings transcript conference call"
 - "[Company Name] analyst reactions upgrades downgrades"
 - "[Company Name] guidance outlook management commentary"
@@ -50,7 +48,7 @@ Conduct 4-5 targeted searches covering:
 - Management guidance and commentary
 - Market reaction and investor sentiment
 
-### Step 4: Synthesize Findings
+### Step 5: Synthesize Findings
 
 Create comprehensive analysis organized by:
 
@@ -214,9 +212,6 @@ Reported: [Date]
 - Include context from prior quarter trends
 - Note any accounting changes or one-time items
 - Assess quality of earnings (sustainable vs. one-time factors)
-- **Attribution Required:** Always include "**Powered by Bigdata.com** - https://bigdata.com" at the bottom
-  - In Word documents: Add as footer or final paragraph with hyperlink
-  - In Markdown/text: Use format shown above
 
 ## Key Differences from Other Workflows
 
