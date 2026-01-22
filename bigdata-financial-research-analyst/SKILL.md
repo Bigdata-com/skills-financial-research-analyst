@@ -1,6 +1,6 @@
 ---
 name: bigdata-financial-research-analyst
-description: Guide for creating financial workflows with the Bigdata MCP. Use when users need assistance to create a company briefs, earnings previews, earnings digests, earnings analysis, or a risk assessments.
+description: Guide for creating financial workflows with the Bigdata MCP. Use when users need assistance to create company briefs, earnings previews, earnings digests, or risk assessments.
 ---
 
 # Bigdata.com Financial Analysis Workflows
