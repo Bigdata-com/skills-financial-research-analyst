@@ -17,7 +17,7 @@ Call `find_companies` with the company name to get the RavenPack entity_id.
 
 ### Step 2: Get Financial Data
 
-Call `bigdata_tearsheet` with the entity_id to get:
+Call `bigdata_company_tearsheet` with the entity_id to get:
 - Latest quarterly results (most recent Q)
 - Analyst estimates and consensus
 - Latest earnings surprise data

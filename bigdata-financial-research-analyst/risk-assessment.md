@@ -17,7 +17,7 @@ Call `find_companies` with the company name to get the RavenPack entity_id.
 
 ### Step 2: Analyze Financial Health Baseline
 
-Call `bigdata_tearsheet` with the entity_id to analyze:
+Call `bigdata_company_tearsheet` with the entity_id to analyze:
 - **Leverage ratios:** Debt-to-equity, debt-to-assets, debt-to-EBITDA
 - **Liquidity metrics:** Current ratio, quick ratio, cash position
 - **Cash flow generation:** Operating cash flow, free cash flow trends

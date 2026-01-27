@@ -82,8 +82,8 @@ Comprehensive risk evaluation with SEC filings and likelihood/impact ratings.
 ## Tools
 
 All workflows use Bigdata.com MCP tools:
-- **find_companies** — Get RavenPack entity_id (required before bigdata_tearsheet and bigdata_events_calendar)
-- **bigdata_tearsheet** — Financial data, metrics, analyst estimates
+- **find_companies** — Get RavenPack entity_id (required before bigdata_company_tearsheet and bigdata_events_calendar)
+- **bigdata_company_tearsheet** — Financial data, metrics, analyst estimates
 - **bigdata_search** — Search for news, filings, transcripts, and analyst reactions
 - **bigdata_events_calendar** - list of historical and upcoming earnings calls, and conference calls
 
@@ -92,7 +92,7 @@ All workflows use Bigdata.com MCP tools:
 ## Universal Best Practices
 
 - `bigdata_search` can be used directly without calling `find_companies` - just include company name in search query
-- Use `bigdata_tearsheet` to establish financial baseline when detailed company data is needed
+- Use `bigdata_company_tearsheet` to establish financial baseline when detailed company data is needed
 - Call `bigdata_search` multiple times with targeted queries for comprehensive coverage
 - Separate objective facts from analysis/implications
 

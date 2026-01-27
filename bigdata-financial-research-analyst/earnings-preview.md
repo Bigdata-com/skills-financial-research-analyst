@@ -17,7 +17,7 @@ Call `find_companies` with the company name to get the RavenPack entity_id.
 
 ### Step 2: Get Financial Baseline
 
-Call `bigdata_tearsheet` with the entity_id to get:
+Call `bigdata_company_tearsheet` with the entity_id to get:
 - Recent quarterly performance trends
 - Historical earnings surprises
 - Analyst estimates for upcoming quarter

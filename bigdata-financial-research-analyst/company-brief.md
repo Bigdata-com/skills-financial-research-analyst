@@ -17,7 +17,7 @@ Call `find_companies` with the company name to get the RavenPack entity_id.
 
 ### Step 2: Gather Business Context
 
-Call `bigdata_tearsheet` with the entity_id to get:
+Call `bigdata_company_tearsheet` with the entity_id to get:
 - Company profile (sector, industry, description)
 - Financial position
 - Recent performance metrics
