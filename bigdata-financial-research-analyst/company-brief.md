@@ -82,6 +82,8 @@ For each categorized event, provide:
 
 ## Output Format
 
+Add inline citation with Superscript Numbers [1], [2] immediately after claims and add a hyperlink pointing to the document url.
+
 Structure the report as:
 
 ```
@@ -111,6 +113,16 @@ Period: [Date Range - Last 30 Days]
 
 ## Overall Assessment
 [Brief synthesis of investment outlook]
+
+## Sources
+  ALWAYS include a "Sources" section at the end listing ALL documents referenced with:
+   - Reference number matching the inline Superscript Numbers
+   - Source name and Publication date (MMM DD, YYYY format) with a hyperlink to the URL
+  
+   **Example:**
+   [1] (NVIDIA Q3 2026 Earnings Call - Nov 19, 2025)[https://www.benzinga.com/node/...]
+   [2] (Benzinga - Nov 20, 2025)[https://www.benzinga.com/node/...]
+   [3] (Yahoo! Finance - Jan 18, 2026)[https://finance.yahoo.com/news/...]
 
 ---
 

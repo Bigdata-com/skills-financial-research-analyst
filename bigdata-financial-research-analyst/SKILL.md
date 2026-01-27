@@ -7,32 +7,6 @@ description: Guide for creating financial workflows with the Bigdata MCP. Use wh
 
 This skill provides several comprehensive financial analysis workflows powered by Bigdata.com data and tools.
 
-
-## ⚠️ CRITICAL REQUIREMENTS (ALWAYS FOLLOW)
-
-### Source Attribution (MANDATORY)
-
-1. **Inline Citations**: Use numbered superscript references [1], [2], etc. immediately after claims or data points derived from sources
-   - Example: "Revenue surged 62% year-over-year to $57 billion[1], driven by data center demand[2]."
-   - Use sequential numbering throughout the document
-   - The same source may be cited multiple times with different numbers if referencing distinct information
-
-2. **Sources Section**: ALWAYS include a "Sources" section at the end listing ALL documents referenced with:
-   - Reference number matching the inline citation
-   - Source name
-   - Publication date (MMM DD, YYYY format)
-   - Full URL
-   
-   **Example:**
-   
-   | # | Source | Date | URL |
-   |---|--------|------|-----|
-   | [1] | NVIDIA Q3 2026 Earnings Call | Nov 19, 2025 | https://app.bigdata.com/files#?document=... |
-   | [2] | Benzinga | Nov 20, 2025 | https://www.benzinga.com/node/... |
-   | [3] | Yahoo! Finance | Jan 18, 2026 | https://finance.yahoo.com/news/... |
-
-3. **Footer Attribution**: Every report must end with "Powered by Bigdata.com - https://bigdata.com"
-
 ### Identify the right company
 If the user provides a company name, call `find_companies` first to find the entity_id. If the company name is ambiguous, respond with:
 
