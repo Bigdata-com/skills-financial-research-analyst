@@ -16,7 +16,7 @@ Comprehensive macro analysis workflows using Bigdata.com MCP tools.
 | `bigdata_search` | News, filings, transcripts, analysis, **economic data** | No - use directly |
 | `bigdata_events_calendar` | Earnings and conference schedules | entity_id for company-specific |
 
-**NOTE:** There is NO country tearsheet tool. For country/economic analysis, use `bigdata_search` with targeted queries.
+**NOTE:** Check if there is a bigdata_country_tearsheet, if there isn't, then: for country/economic analysis, use `bigdata_search` with targeted queries.
 
 ## Country & Economic Analysis Approach
 
