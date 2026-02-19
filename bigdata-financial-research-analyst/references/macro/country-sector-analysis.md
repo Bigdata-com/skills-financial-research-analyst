@@ -145,11 +145,23 @@ Report Date: [Date]
 
 ## Part 3: [Country] [Sector] Company Analysis
 
+**Rule:** Render **one analysis block per company**. Do not combine multiple companies in a single subsection (e.g., avoid "Company A & Company B Overview"). Each company selected in Part 2 must have its own dedicated subsection below.
+
 ### Sector Leaders Comparison
 | Company | Ticker | Mkt Cap | P/E (Fwd) | Rev Growth | Analyst Rating | Price Target |
 |---------|--------|---------|-----------|------------|----------------|--------------|
 | [Company 1] | [XXX] | $XXB | X.Xx | X.X% | Buy/Hold/Sell | $XXX (+X%) |
 | [Company 2] | [XXX] | $XXB | X.Xx | X.X% | Buy/Hold/Sell | $XXX (+X%) |
+
+### [Company 1] ([Ticker])
+**Investment View:** [Positive/Neutral/Cautious/Negative] | Price: [Level] | Market Cap: [Size]
+[2–4 sentences: key strengths, risks, catalysts, and positioning. Do not merge with another company.]
+
+### [Company 2] ([Ticker])
+**Investment View:** [Positive/Neutral/Cautious/Negative] | Price: [Level] | Market Cap: [Size]
+[2–4 sentences: key strengths, risks, catalysts, and positioning. Do not merge with another company.]
+
+[Repeat a dedicated ### [Company N] ([Ticker]) block for every company in the comparison table.]
 
 ### Sub-Sector Breakdown
 | Sub-Sector | [Country] Leaders | Performance | Outlook |
@@ -172,13 +184,18 @@ Report Date: [Date]
 | **Conviction** | High/Medium/Low | [Brief] |
 | **Time Horizon** | Near/Medium/Long-term | [Brief] |
 
+**Rule:** Every company selected in Part 2 must appear in Part 4. Use Top Picks, Areas to Avoid/Underweight, and (if needed) a **Neutral / Hold / Watch** block so that no selected company is omitted.
+
 ### Top Picks in [Country] [Sector]
 1. **[Company]** ([Ticker]) — [1-2 sentence thesis]
 2. **[Company]** ([Ticker]) — [1-2 sentence thesis]
-3. **[Company]** ([Ticker]) — [1-2 sentence thesis]
 
 ### Areas to Avoid/Underweight
-- **[Sub-sector/Company]** — [Reason]
+- **[Company/Sub-sector]** — [Reason]
+
+### Neutral / Hold / Watch (if applicable)
+Use this subsection when one or more Part 2 companies do not fit clearly as Top Picks or Areas to Avoid. Place each such company here with a brief rationale so **all selected companies are covered**.
+- **[Company]** ([Ticker]) — [1-2 sentence rationale for neutral/hold/watch]
 
 ### Key Risks to Monitor
 | Risk | Probability | Impact | Trigger/Indicator |
