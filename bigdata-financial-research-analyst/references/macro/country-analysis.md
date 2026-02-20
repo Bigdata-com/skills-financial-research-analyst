@@ -40,13 +40,15 @@ Use `bigdata_search` to support **structural and historical analysis** — do no
 - "[Country] sectoral GDP share history"
 - "[Country] employment by sector productivity growth"
 
-### Step 5: Search Debt Composition & PFM (required for depth)
-Use `bigdata_search` for **debt mechanics and public financial management**:
+### Step 5: Search Debt Composition, Tax-to-GDP & PFM (required for depth)
+Use `bigdata_search` for **debt mechanics, tax burden, and public financial management**:
 - "[Country] public debt composition domestic external"
 - "[Country] debt servicing interest cost weighted average rate"
 - "[Country] debt crowding out private sector"
 - "[Country] public financial management PFM reform budget execution"
 - "[Country] tax revenue GDP fiscal consolidation"
+- "[Country] tax to GDP ratio tax burden comparison"
+- "[Country] tax-to-GDP revenue mobilization OECD IMF"
 
 ### Step 6: Search Labor Market in Depth (avoid "macro good, micro bad" without elaboration)
 Use `bigdata_search` to substantiate labor narrative:
@@ -62,12 +64,15 @@ Use `bigdata_search` to ground **policy recommendations**:
 - "[Country] structural reform priorities"
 - "[Country] demographic dividend youth bulge policy"
 
-### Step 8: Search Market Implications
+### Step 8: Search Market Implications & FDI
 Use `bigdata_search`:
 - "[Country] equity market outlook"
 - "[Country] bond market yields spreads"
 - "[Country] currency forex outlook"
 - "[Country] foreign investment flows"
+- "[Country] FDI foreign direct investment inflows outflows"
+- "[Country] FDI trajectory outlook 2026 greenfield M&A"
+- "[Country] foreign direct investment by sector trend"
 
 ### Step 9: Search Regional Context (if applicable)
 Use `bigdata_search`:
@@ -93,6 +98,7 @@ Report Date: [Date]
 | Inflation (CPI YoY) | X.X% | X.X% | ↑/↓/→ | [vs target] |
 | Unemployment | X.X% | X.X% | ↑/↓/→ | [context] |
 | Policy Rate | X.X% | X.X% | [last action] | [outlook] |
+| Tax to GDP | X.X% | X.X% | ↑/↓/→ | [vs peers / target] |
 
 ### Economic Health Assessment
 | Dimension | Rating | Commentary |
@@ -108,6 +114,7 @@ Report Date: [Date]
 - **Structural narrative**: [2–4 sentences on how the economy has evolved and what it implies for outlook]
 
 ### Debt & Fiscal Mechanics (include for depth)
+- **Tax to GDP ratio**: [level and trend; comparison to peers or IMF/OECD benchmarks; revenue mobilization targets if cited]
 - **Debt composition**: [domestic vs external share; maturity/currency mix if available]
 - **Debt servicing**: [interest burden, weighted average rate if available; crowding-out or rollover risk]
 - **PFM / budget**: [key PFM reforms, budget execution, revenue performance; tax-to-GDP or targets if cited]
@@ -150,6 +157,11 @@ Report Date: [Date]
 - **vs USD**: [Level]
 - **YTD**: +/-X.X%
 - **Outlook**: Bullish/Neutral/Bearish
+
+### FDI Trajectory
+- **Recent trend**: [inflows/outflows, YoY or latest data; greenfield vs M&A if available]
+- **By sector or source**: [key sectors or origin countries if relevant]
+- **Outlook**: [catalyst or headwind; policy or competitiveness driver]
 
 ## Investment Thesis
 **Bull Case**: [Points]
