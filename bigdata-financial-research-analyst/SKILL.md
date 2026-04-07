@@ -62,6 +62,10 @@ When producing an investment-style view, anchor on:
 2. **Variant perception** — state clearly where your view differs from consensus  
 3. **Quality over quantity** — prioritize the few drivers that matter  
 
+## Earnings preview — mandatory sections
+
+When following [references/public_company/earnings-preview.md](./references/public_company/earnings-preview.md), treat as **mandatory**: **EPIC table** for primary drivers, **FaVeS** section (Fundamentals / Valuation / Sentiment), **Sentiment & positioning** data table (tearsheet + search), **scenario analysis** (bull/base/bear probabilities, prices, probability-weighted EV with math shown), **watch-for** column on earnings quality, and **regulatory/legal** search bucket.
+
 ## Investment thesis workflow (when depth is appropriate)
 
 Use this for comprehensive stock analysis or investment memos—not every brief or digest needs every step.

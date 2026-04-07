@@ -45,6 +45,7 @@ Use `bigdata_search` to find news from the last 30 days. Use natural language qu
 - "[Company Name] earnings announcement"
 - "[Company Name] product launches partnerships"
 - "[Company Name] regulatory legal updates"
+- "[Company Name] lawsuit litigation court ruling investigation settlement last 30 days" (catch material legal/regulatory items, not only earnings headlines)
 
 Conduct multiple searches to cover different aspects:
 - Financial developments

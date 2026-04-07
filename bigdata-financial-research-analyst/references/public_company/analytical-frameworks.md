@@ -8,9 +8,24 @@ Use this **before** you write the final report body—not only after gathering d
 - **Lead with those factors** in the executive summary and in investment implications.  
 - **Deprioritize template sections** that are immaterial for this company/period; say so briefly rather than padding.
 
-## EPIC-style filter (workflow shorthand)
+## EPIC filter (full four tests)
 
-Before synthesizing, ask of each potential theme:
+For **each** primary driver you elevate (especially in **earnings preview** and thesis-style work), show **why it beat other candidates** using EPIC:
+
+| Test | Question |
+|------|----------|
+| **E**ffect (material) | Would getting this wrong move value or the debate on the name meaningfully? |
+| **P**redictability | Can *you* form a view with evidence (not pure speculation)? |
+| **I**ndependence | Does consensus or price **systematically** under- or over-weight this factor? |
+| **C**onsensus gap | Does **your** view differ from consensus in a specific, falsifiable way? |
+
+**Output discipline (earnings preview):** Include a table listing **Driver 1–3** with columns **E / P / I / C** (✓/— or brief note per cell) plus **one line** “why this driver passed vs. factors deprioritized.”
+
+Full reference: [../equity-analysis/variant-perception/epic-framework.md](../equity-analysis/variant-perception/epic-framework.md).
+
+## EPIC-style filter (quick scan for other workflows)
+
+For lighter deliverables, use the short scan:
 
 | Lens | Question |
 |------|----------|
@@ -18,16 +33,13 @@ Before synthesizing, ask of each potential theme:
 | **Assessable** | Can we form a view with available data (tearsheet, filings, search), not hand-waving? |
 | **Consensus gap** | Does consensus or price already fully reflect this, or is there a live disagreement? |
 
-**Only expand** sections where the theme passes these tests. For earnings previews/digests, “what’s priced in” and the print’s impact on the bull/bear debate almost always qualify if you have valuation context.
-
-Full institutional version: [../equity-analysis/variant-perception/epic-framework.md](../equity-analysis/variant-perception/epic-framework.md).
-
 ## After gathering data, before writing the long draft
 
 1. List candidate drivers from tearsheet + search.  
 2. **Rank** them; keep the top **2–3** as “primary drivers.”  
-3. Map each primary driver to **implications** (bullish/bearish/neutral) with **specific metrics** where possible.  
-4. Structure the output so those drivers appear first and drive the conclusion—not only in a flat category list.
+3. For each, map **EPIC** (full four tests for preview; quick scan for briefs if appropriate).  
+4. Map each primary driver to **implications** (bullish/bearish/neutral) with **specific metrics** where possible.  
+5. Structure the output so those drivers appear first and drive the conclusion—not only in a flat category list.
 
 ## Scope (standard Bigdata workflows)
 

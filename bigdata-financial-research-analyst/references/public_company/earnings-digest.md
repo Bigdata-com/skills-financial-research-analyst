@@ -25,6 +25,7 @@ Call `bigdata_company_tearsheet` with the entity_id to get:
 - Latest earnings surprise data
 - Historical trends for comparison
 - Segment performance breakdown
+- **Sentiment, ownership, insider, options/short** fields when the tearsheet exposes them (for the structured **Sentiment & positioning** table)
 
 This provides the quantitative foundation for analysis.
 
@@ -42,8 +43,9 @@ Use `bigdata_search` to find earnings-related content:
 - "[Company Name] analyst reactions upgrades downgrades"
 - "[Company Name] guidance outlook management commentary"
 - "[Company Name] earnings surprise beat miss"
+- "[Company Name] lawsuit litigation regulatory ruling investigation" (post-print legal overhang)
 
-Conduct 4-5 targeted searches covering:
+Conduct 5–7 targeted searches covering:
 - Official earnings release and metrics
 - Earnings call transcript highlights
 - Analyst reactions and rating changes
@@ -98,12 +100,26 @@ Even without a prior user thesis, frame:
 
 **Quality signals (tearsheet + quarter data)**
 
-| Signal | This quarter | Prior quarter | Trend / note |
-|--------|--------------|---------------|--------------|
-| OCF vs net income | | | |
-| DSO | | | |
-| Inventory (if material) | | | |
-| Guidance vs actual (credibility) | | | |
+| Signal | This quarter | Prior quarter | Trend / note | **Watch for (forward)** |
+|--------|--------------|---------------|--------------|-------------------------|
+| OCF vs net income | | | | |
+| DSO | | | | |
+| Inventory (if material) | | | | |
+| Guidance vs actual (credibility) | | | | |
+
+**Sentiment & positioning (structured)**
+
+Same discipline as earnings preview: table with **quantified sentiment** (if available), **insider**, **13F / flows**, **options/short** from tearsheet + search; use **Not available** if missing.
+
+**Scenario refresh (post-print, recommended)**
+
+| Scenario | Probability (%) | Updated assumption vs pre-print | Price / range | Implied return |
+|----------|-----------------|----------------------------------|---------------|----------------|
+| Bull | | | | |
+| Base | | | | |
+| Bear | | | | |
+
+**Probability-weighted view:** [EV or expected upside %—show math]
 
 **Valuation cross-check**
 
@@ -133,12 +149,20 @@ Reported: [Date]
 - **Because:** [evidence]
 
 ## Quality signals
-| Signal | This Q | Prior Q | Trend |
-|--------|--------|---------|-------|
-| OCF vs NI | | | |
-| DSO | | | |
-| Inventory | | | |
-| Guidance credibility | | | |
+| Signal | This Q | Prior Q | Trend | **Watch for** |
+|--------|--------|---------|-------|---------------|
+| OCF vs NI | | | | |
+| DSO | | | | |
+| Inventory | | | | |
+| Guidance credibility | | | | |
+
+## Sentiment & positioning
+| Data type | Metric / fact | Source | As of |
+|-----------|---------------|--------|-------|
+| Sentiment (quantified) | | | |
+| Options / short | | | |
+| Institutional / 13F | | | |
+| Insider | | | |
 
 ## Financial Results Summary
 
@@ -235,6 +259,15 @@ Reported: [Date]
 ### Consensus View
 [Summary of analyst sentiment]
 
+## Scenario refresh (post-print)
+| Scenario | Probability (%) | Updated vs pre-print | Price / range | Implied return vs spot |
+|----------|-----------------|----------------------|---------------|-------------------------|
+| Bull | | | | |
+| Base | | | | |
+| Bear | | | | |
+
+**Probability-weighted view:** [Show EV math]
+
 ## Valuation cross-check
 [Multiples vs history/peers post-print; does price embed the new guidance?]
 
@@ -276,8 +309,11 @@ This output is for informational and research-assistance purposes only. It does 
 - **Focus on business fundamentals**, not just stock price movement  
 - Compare results to consensus from tearsheet; **quantify surprise magnitude** where possible  
 - Include **thesis check** (bull/bear) so the digest is forward-looking  
-- Populate **quality signals** table from tearsheet and release  
+- **Quality signals:** include **Watch for** column (forward monitoring)  
+- **Sentiment & positioning** table: tearsheet-first, then search—no anecdote-only sell-side notes  
+- **Scenario refresh** after the print: probabilities, prices, **show EV math**  
 - Add **valuation cross-check** so implications tie to price  
+- Legal/regulatory search in Step 4 for overhangs not in the press release  
 - Extract key quotes from transcript when available  
 - Note accounting changes or one-time items explicitly  
 - Assess **sustainable vs one-time** drivers of EPS and revenue

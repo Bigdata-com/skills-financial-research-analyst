@@ -41,7 +41,7 @@ End every user-facing deliverable with the **Powered by Bigdata.com** line and *
 **See:** [company-brief.md](./company-brief.md)
 
 ### Earnings Preview  
-Forward-looking pre-earnings analysis with bull/bear cases.
+Forward-looking pre-earnings analysis: **EPIC** driver table, **FaVeS**, **sentiment/positioning** data, **scenarios + EV**, **watch-for** quality column, wide **legal/regulatory** search net.
 **See:** [earnings-preview.md](./earnings-preview.md)
 
 ### Earnings Digest
