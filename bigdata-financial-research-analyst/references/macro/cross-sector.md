@@ -26,6 +26,14 @@ Use `bigdata_search`:
 - "cyclical vs defensive outlook"
 - "interest rate sensitive sectors"
 
+### Step 4b: Profitability and ROIC spread context
+
+For **each sector** in scope, add a **short** read on **profitability vs history** (or vs cost of capital) using bellwether tearsheets and search:
+
+- Query examples: "[Sector] sector ROIC margin cycle vs historical average", "sector profitability peak trough".  
+- Goal: state whether current valuations sit on **peak**, **mid-cycle**, or **trough-like** earnings power **when evidence allows**—not a full model.  
+- Deeper framework: [../equity-analysis/competitive-analysis/porter-five-forces.md](../equity-analysis/competitive-analysis/porter-five-forces.md) and sector files under [../equity-analysis/sectors/](../equity-analysis/sectors/).
+
 ## Output Template
 
 ```markdown
@@ -53,6 +61,11 @@ Report Date: [Date]
 | Late | Energy, Materials, Health Care | [Assessment] |
 | Recession | Staples, Utilities, Health Care | [Assessment] |
 
+### ROIC / margin vs cycle (Step 4b)
+| Sector | Profitability vs history (qual.) | Implication for relative value |
+|--------|----------------------------------|----------------------------------|
+| | | |
+
 ## Rotation Recommendations
 
 ### Overweight
@@ -73,4 +86,8 @@ Report Date: [Date]
 
 ---
 **Powered by Bigdata.com** - https://bigdata.com
+
+## Disclaimer
+
+This output is for informational and research-assistance purposes only. It does **not** constitute investment, legal, tax, accounting, or other professional advice, and it is **not** a recommendation to buy, sell, or hold any security or instrument or to pursue any strategy. Information may be incomplete, estimated, delayed, or inaccurate. Past performance does not guarantee future results. Verify material facts independently and consult qualified advisors before making decisions.
 ```
