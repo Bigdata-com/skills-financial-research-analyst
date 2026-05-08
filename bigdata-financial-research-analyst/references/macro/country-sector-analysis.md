@@ -40,7 +40,7 @@ Use `bigdata_search` with **country + sector** queries:
 - "American technology companies earnings growth"
 
 ### Step 3: Identify Country-Domiciled Sector Leaders
-Use `find_companies` for 5-10 major companies **headquartered in** or **primarily operating in** that country:
+Use `find_securities` for 5-10 major companies **headquartered in** or **primarily operating in** that country:
 
 **US Technology Example:**
 - Apple, Microsoft, NVIDIA, Alphabet, Amazon, Meta, Broadcom, AMD, Salesforce, Adobe

@@ -15,7 +15,7 @@ Generate a comprehensive 30-day summary of recent developments for a specified c
 
 ### Step 1: Identify the Company
 
-Call `find_companies` with the company name to get the RavenPack entity_id.
+Call `find_securities` with the company name to get the RavenPack entity_id.
 
 ### Step 2: Gather Business Context
 

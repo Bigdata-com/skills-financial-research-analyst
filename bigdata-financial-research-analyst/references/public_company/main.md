@@ -6,10 +6,10 @@ All workflows use Bigdata.com MCP tools:
 
 | Tool Name | Purpose | Prerequisite |
 |-----------|---------|--------------|
-| `find_companies` | Get RavenPack entity_id | None |
-| `bigdata_company_tearsheet` | Financial data, metrics, analyst estimates, jobs trend | `find_companies` |
+| `find_securities` | Get RavenPack entity_id | None |
+| `bigdata_company_tearsheet` | Financial data, metrics, analyst estimates, jobs trend | `find_securities` |
 | `bigdata_search` | Search for news, filings, transcripts, and analyst reactions | None |
-| `bigdata_events_calendar` | List historical and upcoming earnings calls, and conference calls | `find_companies` |
+| `bigdata_events_calendar` | List historical and upcoming earnings calls, and conference calls | `find_securities` |
 
 ## Before you synthesize (all workflows)
 

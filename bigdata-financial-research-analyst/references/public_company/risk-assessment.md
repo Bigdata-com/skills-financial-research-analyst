@@ -15,7 +15,7 @@ Comprehensive risk analysis covering regulatory/legal exposure, competitive thre
 
 ### Step 1: Identify the Company
 
-Call `find_companies` with the company name to get the RavenPack entity_id.
+Call `find_securities` with the company name to get the RavenPack entity_id.
 
 ### Step 2: Analyze Financial Health Baseline
 

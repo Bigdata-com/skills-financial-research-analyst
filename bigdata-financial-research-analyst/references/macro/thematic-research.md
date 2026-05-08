@@ -29,7 +29,7 @@ Use `bigdata_search` (5-10 queries):
 - "[Theme] sector exposure"
 
 ### Step 3: Identify Beneficiaries/Casualties
-Use `find_companies` and `bigdata_company_tearsheet` for most exposed companies.
+Use `find_securities` and `bigdata_company_tearsheet` for most exposed companies.
 
 ### Step 4: Geographic Impact
 Use `bigdata_country_tearsheet` for countries most impacted.

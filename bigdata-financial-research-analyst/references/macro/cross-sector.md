@@ -18,7 +18,7 @@ For each sector, use `bigdata_search`:
 - "[Sector] sector analyst recommendations"
 
 ### Step 3: Select Bellwethers
-Use `find_companies` for 3-5 companies per sector, then `bigdata_company_tearsheet`.
+Use `find_securities` for 3-5 companies per sector, then `bigdata_company_tearsheet`.
 
 ### Step 4: Economic Cycle Analysis
 Use `bigdata_search`:

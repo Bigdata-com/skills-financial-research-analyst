@@ -13,7 +13,7 @@ Lightweight answer path when the user asks **what a company is worth**, **whethe
 
 ### Step 1: Identify the company
 
-`find_companies` → entity id.
+`find_securities` → entity id.
 
 ### Step 2: Pull valuation inputs
 

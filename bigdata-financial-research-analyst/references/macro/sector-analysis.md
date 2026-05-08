@@ -34,7 +34,7 @@ Do **not** rely only on generic P/E, P/S, EV/EBITDA. Map the sector to **primary
 | (Other) | Default to margin trajectory, ROIC vs peers, and segment growth |
 
 ### Step 2: Identify Key Companies
-Use `find_companies` for 5-10 major sector companies, then `bigdata_company_tearsheet` for each:
+Use `find_securities` for 5-10 major sector companies, then `bigdata_company_tearsheet` for each:
 - Financial metrics and performance
 - Analyst estimates and sentiment
 - Revenue segmentation
