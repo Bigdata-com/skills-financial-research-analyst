@@ -17,7 +17,7 @@ This skill combines **structured Bigdata.com workflows** (public company and mac
 
 ### Identify the right company
 
-If the user provides a company name, call `find_companies` first to get the entity id. If the name is ambiguous, respond with:
+If the user provides a company name, call `find_securities` first to get the entity id. If the name is ambiguous, respond with:
 
 > "I found multiple companies named [X]. Did you mean [Company A] in [Industry] or [Company B] in [Industry]?"
 
@@ -47,7 +47,7 @@ Read the appropriate reference file for the request:
 
 Establish a factual base before deep analysis:
 
-1. `find_companies` → entity id and company type (public/private) where applicable  
+1. `find_securities` → entity id and company type (public/private) where applicable  
 2. `bigdata_company_tearsheet` → financials, estimates, sentiment, ESG (when analyzing a specific company)  
 3. `bigdata_search` → news, filings, transcripts, analyst/economic coverage  
 4. `bigdata_events_calendar` → upcoming earnings and conferences (when entity id is available)  
@@ -169,7 +169,7 @@ When a user says **"Can you help me with a financial report?"** or similar, resp
 ## Universal best practices
 
 - Before long-form synthesis on a company, read [references/public_company/analytical-frameworks.md](./references/public_company/analytical-frameworks.md) (EPIC-style filter, **2–3 drivers**, quality over quantity).  
-- `bigdata_search` can be used with the company (or topic) in the query; `find_companies` first when you need a tearsheet or calendar.  
+- `bigdata_search` can be used with the company (or topic) in the query; `find_securities` first when you need a tearsheet or calendar.  
 - Use `bigdata_company_tearsheet` for a financial baseline on a specific entity.  
 - Call `bigdata_search` multiple times with focused queries for coverage.  
 - Separate **facts** from **analysis / implications**.
