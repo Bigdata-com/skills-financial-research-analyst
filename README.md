@@ -1,67 +1,57 @@
-# Bigdata Financial Research Analyst Skill
+# ⚠️ This repository is obsolete — it has moved
 
-An AI-powered skill that transforms your agentic platform into a Financial Research Analyst assistant. This skill automates research workflows and creates professional deliverables using [Bigdata.com](https://bigdata.com) MCP tools.
+Development of the **Bigdata Financial Research Analyst** skills no longer happens here.
 
-## What This Skill Does
+They now live — and are actively maintained — as the official Bigdata.com plugin in the
+**[bigdata-plugins-marketplace](https://github.com/Bigdata-com/bigdata-plugins-marketplace)** repository.
 
-Once installed, You Agent platform (e.g. Claude) can help you with:
+**👉 Follow [Bigdata-com/bigdata-plugins-marketplace](https://github.com/Bigdata-com/bigdata-plugins-marketplace) instead.**
 
-**Research & Analysis**
-- **Company Briefs** — 30-day development summaries with categorized news and investment implications
-- **Earnings Previews** — Pre-earnings analysis with bull/bear cases and key metrics to watch
-- **Earnings Digests** — Post-earnings breakdowns with surprises, guidance analysis, and analyst reactions
-- **Risk Assessments** — Comprehensive risk profiles with likelihood/impact ratings from SEC filings and news
+This repository is kept read-only for reference. It will not receive updates, fixes, or new skills.
 
-**Documents & Deliverables**
-- **Investment Memos** — Structured buy/sell/hold recommendations with supporting analysis
-- **Pitch Deck Content** — Key slides for investment committee presentations
-- **Quick Updates** — Morning briefings or client-ready summaries
+---
 
-## Installation
+## Where to go now
 
-### Option 1: Download from Releases (Recommended)
+### Recommended: install the official plugin
 
-1. Go to the [Releases page](https://github.com/Bigdata-com/skills-financial-research-analyst/releases)
-2. Download the latest `.skill` file from the release assets
-3. Open [Claude](https://claude.ai) and navigate to **Settings → Capabilities**
-4. Upload the `.skill` file to add the Financial Research Analyst capabilities
+The plugin bundles the full set of financial research skills and keeps them up to date automatically.
+It is officially supported in **Claude** and **ChatGPT** — click your platform below to open the plugin
+details page, then click `Install`:
 
-### Option 2: Build from Source
+| Platform | Quick install |
+| --- | --- |
+| **Claude** | [Official Bigdata plugin →](https://claude.ai/directory/plugins/bigdata-com%40knowledge-work-plugins) |
+| **ChatGPT** | [Official Bigdata plugin →](https://chatgpt.com/plugins/plugin_asdk_app_69491eceef3c8191beb70788b7840429) |
 
-If you want to customize the skill to match your company standards and templates:
+Other platforms can add the plugin from source using the public repository:
 
-1. **Fork this repository** to your GitHub account
-2. Clone your fork locally:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/skills-financial-research-analyst.git
-   cd skills-financial-research-analyst
-   ```
-3. Customize the workflow templates in the `bigdata-financial-research-analyst/` folder
-4. Build your custom `.skill` file:
-   ```bash
-   ./scripts/build-skill.sh <version>
-   ```
-   For example:
-   ```bash
-   ./scripts/build-skill.sh 1.0.0
-   ```
-5. Find your custom skill package at `scripts/output/bigdata-financial-research-analyst_<version>.skill`
-6. Upload it to Claude at **Settings → Capabilities**
+```
+https://github.com/Bigdata-com/bigdata-plugins-marketplace
+```
 
-## Customization Ideas
+📖 **[Full installation guide →](https://docs.bigdata.com/skills-reference/install-bigdata-plugin)**
 
-When forking this repository, you might want to customize:
+### Alternative: install a single Skill
 
-- **Report templates** — Adjust formatting to match your company's style guide
-- **Analysis sections** — Add or remove sections based on your team's needs
-- **Output formats** — Modify default outputs for your workflow (Markdown, Word, etc.)
-- **Risk categories** — Tailor risk assessment frameworks to your investment criteria
+If you only want one specific skill, you can generate a `.skill` (or `.zip`) file for it using the
+build script in the new repository:
+
+🔧 **[`plugins/bigdata-com/scripts/build-skill.sh`](https://github.com/Bigdata-com/bigdata-plugins-marketplace/blob/main/plugins/bigdata-com/scripts/build-skill.sh)**
+
+```bash
+./build-skill.sh bigdata-earnings-preview
+```
+
+Then upload the generated file to your agentic platform (in Claude: **Settings → Capabilities**).
+
+---
 
 ## Requirements
 
-This skill requires the [Bigdata.com MCP](https://bigdata.com) connection to be configured in your agentic platform for accessing financial data, news, filings, and analyst estimates.
+The skills require a [Bigdata.com](https://bigdata.com) MCP connection in your agentic platform to
+access financial data, news, filings, and analyst estimates. Integration guides:
 
-For detailed setup instructions, see the integration guides for your platform:
 - [Claude MCP Integration](https://docs.bigdata.com/mcp-reference/oauth-integrations/claude-mcp-integration)
 - [ChatGPT MCP Integration](https://docs.bigdata.com/mcp-reference/oauth-integrations/chatgpt-mcp-integration)
 - [Microsoft Copilot MCP Integration](https://docs.bigdata.com/mcp-reference/oauth-integrations/microsoft-copilot-mcp-integration)
